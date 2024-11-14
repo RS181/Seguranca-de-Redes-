@@ -35,6 +35,8 @@ Projeto realizado no contexto da unidade curricular Segurança de Redes
   <li>Postman: 11.2.0 (only used to test some requests)</li>
 </ol>
 
+<h2>Download and extract Seguranca-de-Redes.rar</h2>
+
 <h2>How to run</h2>
 
 <ol>
