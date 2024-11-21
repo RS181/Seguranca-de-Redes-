@@ -1,6 +1,11 @@
 # Seguranca-de-Redes-
 Projeto realizado no contexto da unidade curricular Segurança de Redes 
 
+
+
+
+
+
 <h2>Project Description</h2>
 <ol>
 
@@ -10,11 +15,12 @@ Projeto realizado no contexto da unidade curricular Segurança de Redes
     <ul>
       <li>For permanent storing , we used a relational database.</li>
     </ul>
-    <li> Nginx (Not relevant for this project)</li>
+    <li> Nginx </li>
     <ul>
       <li> We used Nginx for dealing with diferent tasks , the most importants to note are:</li>
       <ul>
-        <li> Watching streams via the internet.</li>
+        <li> Watching streams via the internet. (not relevant for this project)</li>
+        <li> Act as a reverse proxy to the main aplication (this allows us to implement some extra securitie features, susch as https, DDOS mitigation, etc...)</li>
         <li>Mediating an ecrypted communication between application's and Application Server (using https).</li>
       </ul>
     </ul>
@@ -32,12 +38,14 @@ Projeto realizado no contexto da unidade curricular Segurança de Redes
   <li>Apache Maven 3.6.3</li>
   <li>openjdk version "11.0.20.1" 2023-08-24</li>
   <li>mysql  Ver 8.0.35</li>
+  <li>nginx version: nginx/1.20.2</li>
   <li>Postman: 11.2.0 (only used to test some requests)</li>
 </ol>
 
-<h2>Download and extract Seguranca-de-Redes.rar</h2>
 
-<h2>How to run</h2>
+<h2>Download and extract Seguranca-de-Redes.rar</h2>
+Firts you need to extract 
+<h3>How to run</h3>
 
 <ol>
   	<li>Chosse wich application we want to run </li>
@@ -53,10 +61,23 @@ Projeto realizado no contexto da unidade curricular Segurança de Redes
     
 </ol>
 
-<h2>Example requests - Secure app </h2>
+
+<h3> Where are the src files</h3>
 
 <ol>
-  <li>http://localhost:8080/connect/all/usr?apiKey=1234567890abcdef</li>
+  <li>Chosse wich application we want to run</li>
+  <li>(example for secure app )</li>
+  <ul>
+    <li> cd ./Seguranca-de-Redes-/secure app/mkyong/jax-rs/jersey/jersey-jetty/src/main/java/com/mkyong
+  </ul>
+</ol>
+
+
+
+<h2>Example requests - "Secure" app (with nginx reverse-proxy and https configured)</h2>
+
+<ol>
+  <li>https://localhost/api/connect/all/usr?apiKey=1234567890abcdef</li>
   <ul>
     <li>list all users in database</li>
   </ul>
