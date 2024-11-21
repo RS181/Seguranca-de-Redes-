@@ -3,9 +3,6 @@ Projeto realizado no contexto da unidade curricular Segurança de Redes
 
 
 
-
-
-
 <h2>Project Description</h2>
 <ol>
 
@@ -44,7 +41,7 @@ Projeto realizado no contexto da unidade curricular Segurança de Redes
 
 
 <h2>Download and extract Seguranca-de-Redes.rar</h2>
-Firts you need to extract 
+First you need to extract Seguranca-de-Redes.rar present in this repository
 <h3>How to run</h3>
 
 <ol>
@@ -72,8 +69,10 @@ Firts you need to extract
   </ul>
 </ol>
 
-
-
+<h2>Links available in API</h2>
+<ol>
+  <li>Check file <strong>links_api.md</strong> with the description of available links in both applications </li>
+</ol>
 <h2>Example requests - "Secure" app (with nginx reverse-proxy and https configured)</h2>
 
 <ol>
@@ -84,11 +83,13 @@ Firts you need to extract
 
   <li>Removal of a user (capture in postman)</li>
 
-  ![image](https://github.com/user-attachments/assets/ef14cabb-1797-42cc-a731-269c384dd647)
+  ![image](https://github.com/user-attachments/assets/3eaa861b-9da8-418b-ad34-7c15e038e96e)
+
 
   <li>Upload of movie (capture in postman)</li>
 
-  ![image](https://github.com/user-attachments/assets/89d83a83-ce0a-4adc-ab47-08f57f54449e)
+  ![image](https://github.com/user-attachments/assets/617e7899-59b0-44c3-81ba-ababeb8a2ad0)
+
 
   <li>curl -X GET "http://localhost:8080/ping/safe/www.google.com"</li>
   <ul>
@@ -96,7 +97,7 @@ Firts you need to extract
   </ul>
 </ol>
 
-<h2>Example requests - UnSecure app </h2>
+<h2>Example requests - UnSecure app (without  nginx reverse-proxy and https configured) </h2>
 
 <ol>
   <li>http://localhost:8080/connect/all/usr</li>
