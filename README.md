@@ -36,12 +36,17 @@ Projeto realizado no contexto da unidade curricular Segurança de Redes
   <li>openjdk version "11.0.20.1" 2023-08-24</li>
   <li>mysql  Ver 8.0.35</li>
   <li>nginx version: nginx/1.20.2</li>
+
+  <ul>
+    <li> (For Legacy System) nginx version: openresty/1.21.4.1
+  </ul>
   <li>Postman: 11.2.0 (only used to test some requests)</li>
 </ol>
 
 <h2>NGINX configuration file</h2>
 <ol>
 <li>Check file <strong>nginx.conf</strong> (has all the configuration relationg to NGINX an its only used in <strong>"secure app"</strong>) </li>
+<li>  The file <strong>nginx-legacy.conf</strong> was the file used to add <strong>http request validation<strong> and <strong> Acess control with Api key <strong> to a simple legacy system cenario  
 </ol>
 
 <h2>Download and extract Seguranca-de-Redes.rar</h2>
