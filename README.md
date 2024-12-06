@@ -51,6 +51,8 @@ Projeto realizado no contexto da unidade curricular Segurança de Redes
 
 <h2>Download and extract Seguranca-de-Redes.rar</h2>
 First you need to extract Seguranca-de-Redes.rar present in this repository
+
+
 <h3>How to run</h3>
 
 <ol>
@@ -126,3 +128,7 @@ First you need to extract Seguranca-de-Redes.rar present in this repository
 
 
 
+> [!NOTE]  
+> In the file **UploadFile.java** you need to change the path on wich the application saves the movies.
+> If you want to use https you have to generate a certificate and key and puth their respective path's in **nginx.conf**.
+> If you want to use the same Database that we used, you can check **netflix.sql**. 
